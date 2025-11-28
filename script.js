@@ -12,7 +12,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
   if (langSelect) {
     langSelect.value = currentLang;
-
     langSelect.addEventListener("change", function () {
       setLanguage(this.value);
     });
@@ -46,13 +45,10 @@ function updateStaticText() {
   // Section titles
   document.querySelector("#about h2").textContent =
     translations[currentLang].about_title;
-
   document.querySelector("#services h2").textContent =
     translations[currentLang].services_title;
-
   document.querySelector("#news h2").textContent =
     translations[currentLang].news_title;
-
   document.querySelector("#location h2").textContent =
     translations[currentLang].location_title;
 
@@ -61,7 +57,7 @@ function updateStaticText() {
 }
 
 // -------------------------------
-// UPDATE SERVICES & NEWS WHEN LANGUAGE CHANGES
+// UPDATE SERVICES & NEWS
 // -------------------------------
 function updateDynamicSections() {
   loadServices();
@@ -112,19 +108,22 @@ function loadServices() {
     .then((res) => res.json())
     .then((data) => {
       const container = document.getElementById("services-container");
-      container.innerHTML = ""; // Clear previous content
+      container.innerHTML = "";
 
       data.forEach((service) => {
         const card = document.createElement("div");
         card.classList.add("service");
 
         card.innerHTML = `
-        <h3>${service.name[currentLang]}</h3>
-        <p>${service.shortDesc[currentLang]}</p>
-        <button class="details-btn">More Details</button>
-        <a href="tel:${clinicPhone}" class="call-btn">Call Clinic</a>
-      `;
+          <h3>${service.name[currentLang]}</h3>
+          <p>${service.shortDesc[currentLang]}</p>
+          <div class="buttons">
+            <button class="details-btn">More Details</button>
+            <a href="tel:${clinicPhone}" class="call-btn">Call Clinic</a>
+          </div>
+        `;
 
+        // Add modal functionality
         card.querySelector(".details-btn").addEventListener("click", () => {
           showServiceModal(service);
         });
@@ -151,30 +150,23 @@ function showServiceModal(service) {
   modal.innerHTML = `
     <div class="modal-content">
       <span class="close">&times;</span>
-
       <h2>${service.name[currentLang]}</h2>
-
       ${imageHTML}
-
       <p>${service.shortDesc[currentLang]}</p>
-
       <ul>
         ${service.details[currentLang]
           .map((item) => `<li>${item}</li>`)
           .join("")}
       </ul>
-
-      <p><strong>${translations[currentLang].doctor}:</strong> 
-        ${service.doctor[currentLang]}
-      </p>
-
-      <p><strong>${translations[currentLang].hours}:</strong> 
-        ${service.hours}
-      </p>
-
-      <a href="tel:${clinicPhone}" class="call-btn">
-        ${translations[currentLang].call_btn}
-      </a>
+      <p><strong>${translations[currentLang].doctor}:</strong> ${
+    service.doctor[currentLang]
+  }</p>
+      <p><strong>${translations[currentLang].hours}:</strong> ${
+    service.hours
+  }</p>
+      <a href="tel:${clinicPhone}" class="call-btn">${
+    translations[currentLang].call_btn
+  }</a>
     </div>
   `;
 

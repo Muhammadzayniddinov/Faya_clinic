@@ -1,0 +1,282 @@
+[
+  {
+    "id": 1,
+    "name": {
+      "en": "ENT (ENT Specialist)",
+      "ru": "ЛОР (Специалист по ухо-горло-носу)",
+      "uz": "ЛОР (Quloq, burun, tomoq mutaxassisi)"
+    },
+    "shortDesc": {
+      "en": "Diagnosis and treatment of ear, nose, and throat problems.",
+      "ru": "Диагностика и лечение заболеваний ушей, носа и горла.",
+      "uz": "Quloq, burun va tomoq muammolarini tashxislash va davolash."
+    },
+    "details": {
+      "en": [
+        "Treatment for colds, sinusitis, allergies",
+        "Ear cleaning and hearing tests",
+        "Tonsillitis and throat infection treatment",
+        "Chronic sinus and nose problems"
+      ],
+      "ru": [
+        "Лечение простуды, синусита, аллергии",
+        "Чистка ушей и проверка слуха",
+        "Лечение тонзиллита и инфекции горла",
+        "Хронические проблемы с пазухами и носом"
+      ],
+      "uz": [
+        "Sovuq, sinusit va allergiyalarni davolash",
+        "Quloq tozalash va eshitish testlari",
+        "Tonsillit va tomoq infektsiyasini davolash",
+        "Surunkali sinus va burun muammolari"
+      ]
+    },
+    "image": "img/ENT.webp",
+    "doctor": {
+      "en": "Dr. Safarov",
+      "ru": "Др. Сафаров",
+      "uz": "Dr. Safarov"
+    },
+    "hours": "Mon–Fri | 09:00 – 16:00"
+  },
+  {
+    "id": 2,
+    "name": {
+      "en": "Pediatrician",
+      "ru": "Педиатр",
+      "uz": "Pediatr"
+    },
+    "shortDesc": {
+      "en": "Full medical care for children of all ages.",
+      "ru": "Полный медицинский уход за детьми всех возрастов.",
+      "uz": "Barcha yoshdagi bolalar uchun to‘liq tibbiy xizmat."
+    },
+    "details": {
+      "en": [
+        "Child check-ups",
+        "Vaccinations",
+        "Growth and development monitoring",
+        "Treatment of common childhood illnesses"
+      ],
+      "ru": [
+        "Проверка здоровья ребенка",
+        "Вакцинация",
+        "Мониторинг роста и развития",
+        "Лечение распространенных детских болезней"
+      ],
+      "uz": [
+        "Bolalar tekshiruvlari",
+        "Emlashlar",
+        "O‘sish va rivojlanishni kuzatish",
+        "Odatdagi bolalik kasalliklarini davolash"
+      ]
+    },
+    "image": "pediatric.jpg",
+    "doctor": {
+      "en": "Dr. Dilnoza Karimova",
+      "ru": "Др. Дильноза Каримова",
+      "uz": "Dr. Dilnoza Karimova"
+    },
+    "hours": "Mon–Sat | 09:00 – 18:00"
+  },
+  {
+    "id": 3,
+    "name": {
+      "en": "Therapist",
+      "ru": "Терапевт",
+      "uz": "Terapevt"
+    },
+    "shortDesc": {
+      "en": "General internal medicine and diagnostic services.",
+      "ru": "Общая внутренняя медицина и диагностические услуги.",
+      "uz": "Umumiy ichki tibbiyot va diagnostika xizmatlari."
+    },
+    "details": {
+      "en": [
+        "Flu, infection, and fever treatment",
+        "Chronic disease management",
+        "Full physical examination",
+        "Personalized treatment plans"
+      ],
+      "ru": [
+        "Лечение гриппа, инфекций и температуры",
+        "Управление хроническими заболеваниями",
+        "Полное медицинское обследование",
+        "Индивидуальные планы лечения"
+      ],
+      "uz": [
+        "Gripp, infektsiya va isitmani davolash",
+        "Surunkali kasalliklarni boshqarish",
+        "To‘liq tibbiy tekshiruv",
+        "Shaxsiy davolash rejasi"
+      ]
+    },
+    "image": "",
+    "doctor": {
+      "en": "Dr. Timur Soliyev",
+      "ru": "Др. Тимур Солиев",
+      "uz": "Dr. Timur Soliyev"
+    },
+    "hours": "Mon–Fri | 08:30 – 17:30"
+  },
+  {
+    "id": 4,
+    "name": {
+      "en": "Cardiologist",
+      "ru": "Кардиолог",
+      "uz": "Kardiolog"
+    },
+    "shortDesc": {
+      "en": "Heart check-up and cardiovascular treatment.",
+      "ru": "Проверка сердца и лечение сердечно-сосудистых заболеваний.",
+      "uz": "Yurak tekshiruvi va yurak-qon tomir davolash."
+    },
+    "details": {
+      "en": [
+        "ECG and heart monitoring",
+        "Hypertension treatment",
+        "Heart risk analysis",
+        "Cholesterol and blood vessels check-up"
+      ],
+      "ru": [
+        "ЭКГ и мониторинг сердца",
+        "Лечение гипертонии",
+        "Анализ рисков сердца",
+        "Проверка холестерина и сосудов"
+      ],
+      "uz": [
+        "EKG va yurak monitoringi",
+        "Gipertenziya davolash",
+        "Yurak xavfini tahlil qilish",
+        "Xolesterin va qon tomirlarini tekshirish"
+      ]
+    },
+    "image": "cardio.jpg",
+    "doctor": {
+      "en": "Dr. Nigora A.",
+      "ru": "Др. Нигoра А.",
+      "uz": "Dr. Nigora A."
+    },
+    "hours": "Tue–Sat | 10:00 – 17:00"
+  },
+  {
+    "id": 5,
+    "name": {
+      "en": "Massage Therapy",
+      "ru": "Массаж",
+      "uz": "Massaj"
+    },
+    "shortDesc": {
+      "en": "Relaxation and medical massage sessions.",
+      "ru": "Расслабляющие и лечебные сеансы массажа.",
+      "uz": "Damalish va tibbiy massaj seanslari."
+    },
+    "details": {
+      "en": [
+        "Relaxation massage",
+        "Back and neck pain treatment",
+        "Sports massage",
+        "Improves blood circulation"
+      ],
+      "ru": [
+        "Расслабляющий массаж",
+        "Лечение боли в спине и шее",
+        "Спортивный массаж",
+        "Улучшает кровообращение"
+      ],
+      "uz": [
+        "Damalish massaji",
+        "Bel va bo‘yin og‘rig‘ini davolash",
+        "Sport massaji",
+        "Qon aylanishini yaxshilaydi"
+      ]
+    },
+    "image": "",
+    "doctor": {
+      "en": "Certified Massage Therapist – Mr. Rustam",
+      "ru": "Сертифицированный массажист – М-р Рустам",
+      "uz": "Sertifikatlangan massaj terapevti – Mr. Rustam"
+    },
+    "hours": "Mon–Sun | 10:00 – 20:00"
+  },
+  {
+    "id": 6,
+    "name": {
+      "en": "Dermatologist",
+      "ru": "Дерматолог",
+      "uz": "Dermatolog"
+    },
+    "shortDesc": {
+      "en": "Skin diagnosis and treatment services.",
+      "ru": "Диагностика и лечение заболеваний кожи.",
+      "uz": "Teri kasalliklarini tashxislash va davolash xizmatlari."
+    },
+    "details": {
+      "en": [
+        "Acne and skin infection treatment",
+        "Skin allergy testing",
+        "Mole check-up and removal",
+        "Cosmetic dermatology consultations"
+      ],
+      "ru": [
+        "Лечение акне и инфекций кожи",
+        "Тестирование на аллергии кожи",
+        "Проверка и удаление родинок",
+        "Консультации по косметической дерматологии"
+      ],
+      "uz": [
+        "Akne va teri infektsiyalarini davolash",
+        "Teri allergiya testlari",
+        "Chanoq va o‘sma tekshiruvi",
+        "Kosmetik dermatologiya bo‘yicha maslahatlar"
+      ]
+    },
+    "image": "derma.jpg",
+    "doctor": {
+      "en": "Dr. Gulhayo M.",
+      "ru": "Др. Гулхаё М.",
+      "uz": "Dr. Gulhayo M."
+    },
+    "hours": "Mon–Fri | 11:00 – 18:00"
+  },
+  {
+    "id": 7,
+    "name": {
+      "en": "Cosmetologist",
+      "ru": "Косметолог",
+      "uz": "Kosmetolog"
+    },
+    "shortDesc": {
+      "en": "Cosmetic procedures and skin care treatments.",
+      "ru": "Косметические процедуры и уход за кожей.",
+      "uz": "Kosmetik protseduralar va teri parvarishi."
+    },
+    "details": {
+      "en": [
+        "Deep facial cleansing",
+        "Skin rejuvenation",
+        "Anti-aging procedures",
+        "Hydrafacial & peeling treatments"
+      ],
+      "ru": [
+        "Глубокая очистка лица",
+        "Омоложение кожи",
+        "Процедуры против старения",
+        "Гидрафейшл и пилинг"
+      ],
+      "uz": [
+        "Chuqur yuz tozalash",
+        "Teri yangilanishi",
+        "Anti-aging protseduralar",
+        "Hydrafacial va peeling"
+      ]
+    },
+    "image": "",
+    "doctor": {
+      "en": "Dr. Malika A.",
+      "ru": "Др. Малика А.",
+      "uz": "Dr. Malika A."
+    },
+    "hours": "Everyday | 10:00 – 19:00"
+  }
+]

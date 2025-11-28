@@ -1,0 +1,315 @@
+/* Reset and base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #f4f4f4;
+}
+
+/* Header */
+header {
+  background-color: #57cc99;
+  padding: 20px 0;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+  font-size: 1.8rem;
+  color: white;
+  font-weight: bold;
+}
+
+nav {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.nav-right {
+  display: flex;
+  align-items: center; /* vertically center */
+  gap: 15px; /* space between menu and dropdown */
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  display: flex;
+  align-items: center;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+/* Sections */
+section {
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 40px 25px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  text-align: left; /* <<< TEXT LEFT */
+}
+
+/* Smaller Section Titles */
+section h2 {
+  text-align: left; /* <<< TITLE LEFT */
+  font-size: 1.4rem; /* <<< SMALLER TITLE */
+  color: #38a3a5;
+  margin-bottom: 20px;
+}
+
+/* About section text */
+#about-content {
+  text-align: center; /* Center everything inside About section */
+}
+
+#clinic-logo {
+  display: block;
+  width: 400px; /* adjust size as needed */
+  margin: 0 auto 20px auto; /* center + add spacing below */
+  border-radius: 10px; /* optional rounding */
+}
+
+/* Services */
+.service-list {
+  display: grid;
+  gap: 25px;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.service {
+  background: #f9f9f9;
+  padding: 18px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: 0.2s;
+}
+
+.service:hover {
+  transform: translateY(-5px);
+}
+
+.service h3 {
+  color: #38a3a5;
+}
+
+/* News */
+#news-container {
+  display: grid;
+  gap: 25px;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
+
+.news-card {
+  background: #f9f9f9;
+  padding: 18px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Location Section */
+#map-container {
+  width: 100%;
+  margin: auto;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+#map-container iframe {
+  width: 100%;
+  border: none;
+  border-radius: 10px;
+}
+
+/* Footer */
+footer {
+  background-color: #333;
+  color: white;
+  padding: 40px 20px;
+  margin-top: 40px;
+}
+
+.footer-content {
+  max-width: 1000px;
+  margin: auto;
+}
+
+.contact-info {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.contact-info p {
+  margin: 5px 0;
+}
+
+.footer-bottom {
+  border-top: 1px solid #666;
+  padding-top: 20px;
+  text-align: center;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+  }
+
+  nav ul {
+    margin-top: 12px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  section {
+    margin: 20px;
+    padding: 30px 18px;
+  }
+
+  #map-container iframe {
+    height: 350px;
+  }
+}
+
+.service .details-btn,
+.service .call-btn {
+  margin-top: 10px;
+  display: inline-block;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.service-img-modal {
+  width: 100%;
+  max-width: 350px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 12px;
+  display: block;
+  margin: 15px auto;
+}
+
+.service-img-card {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 10px;
+  display: block;
+  margin: 0 auto 10px;
+}
+
+.details-btn {
+  background-color: #38a3a5;
+  color: white;
+  margin-right: 8px;
+}
+
+.details-btn:hover {
+  background-color: #2e7f7f;
+}
+
+.call-btn {
+  background-color: #57cc99;
+  color: white;
+  text-decoration: none;
+}
+
+.call-btn:hover {
+  background-color: #45a085;
+}
+
+/* MODAL STYLES */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.modal-content {
+  background: white;
+  padding: 25px;
+  border-radius: 10px;
+  width: 90%;
+  max-width: 600px;
+  position: relative;
+  text-align: left;
+}
+
+.modal-content h2 {
+  margin-top: 0;
+  color: #38a3a5;
+}
+
+.modal-content .close {
+  position: absolute;
+  top: 12px;
+  right: 15px;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+/* Language selector in header */
+#language-select {
+  background: transparent; /* header color */
+  color: white; /* white text */
+  border: none; /* no border */
+  font-size: 16px; /* same as nav links */
+  font-weight: bold;
+  cursor: pointer;
+  padding: 0 5px;
+  appearance: none; /* remove default arrow */
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+/* Custom arrow */
+#language-select {
+  background-image: url("data:image/svg+xml;utf8,<svg fill='white' height='10' viewBox='0 0 10 10' width='10' xmlns='http://www.w3.org/2000/svg'><polygon points='0,0 10,0 5,5'/></svg>");
+  background-repeat: no-repeat;
+  background-position: right 5px center;
+  background-size: 10px;
+  padding-right: 20px; /* leave space for arrow */
+}
+
+/* Fix dropdown menu text and background */
+#language-select option {
+  background-color: #57cc99; /* header color */
+  color: white; /* text color */
+}
+
+/* Remove focus outline */
+#language-select:focus {
+  outline: none;
+}

@@ -1,0 +1,17 @@
+[
+  {
+    "title": { "en": "New Pediatric Department", "ru": "Новый педиатрический отдел", "uz": "Yangi pediatriya bo‘limi" },
+    "description": { "en": "We have opened a new pediatric care section with modern equipment.", "ru": "Мы открыли новый педиатрический отдел с современным оборудованием.", "uz": "Zamonaviy uskuna bilan yangi pediatriya bo‘limi ochildi." },
+    "date": "2025-01-10"
+  },
+  {
+    "title": { "en": "Free Health Checkup Week", "ru": "Неделя бесплатных медицинских осмотров", "uz": "Bepul tibbiy tekshiruvlar haftasi" },
+    "description": { "en": "Free checkups available from March 1 to March 7.", "ru": "Бесплатные осмотры с 1 по 7 марта.", "uz": "Bepul tekshiruvlar 1 martdan 7 martgacha mavjud." },
+    "date": "2025-02-20"
+  },
+  {
+    "title": { "en": "Cardiology Seminar", "ru": "Семинар по кардиологии", "uz": "Kardiologiya seminar" },
+    "description": { "en": "Join our free seminar on heart health and prevention tips.", "ru": "Присоединяйтесь к бесплатному семинару о здоровье сердца и профилактике.", "uz": "Yurak sog‘ligi va oldini olish bo‘yicha bepul seminarga qo‘shiling." },
+    "date": "2025-03-15"
+  }
+]

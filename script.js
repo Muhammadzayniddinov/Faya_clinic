@@ -118,10 +118,10 @@ function loadServices() {
           <h3>${service.name[currentLang]}</h3>
           <p>${service.shortDesc[currentLang]}</p>
           <div class="buttons">
-            <button class="details-btn">More Details</button>
-            <a href="tel:${clinicPhone}" class="call-btn">Call Clinic</a>
+          <button class="details-btn">${translations[currentLang].more_details}</button>
+          <a href="tel:${clinicPhone}" class="call-btn">${translations[currentLang].call_btn}</a>
           </div>
-        `;
+          `;
 
         // Add modal functionality
         card.querySelector(".details-btn").addEventListener("click", () => {

@@ -19,6 +19,7 @@ const translations = {
     doctor: "Doctor",
     hours: "Working Hours",
     call_btn: "Call Clinic",
+    more_details: "More Details",
   },
   ru: {
     clinic_name: "Клиника Фая",
@@ -39,6 +40,7 @@ const translations = {
     doctor: "Доктор",
     hours: "Часы работы",
     call_btn: "Позвонить в клинику",
+    more_details: "Подробнее",
   },
   uz: {
     clinic_name: "Faya Klinika",
@@ -60,5 +62,6 @@ const translations = {
     doctor: "Shifokor",
     hours: "Ish vaqti",
     call_btn: "Klinikaga qo‘ng‘iroq qilish",
+    more_details: "Batafsil",
   },
 };
